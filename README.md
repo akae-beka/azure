@@ -23,7 +23,14 @@ az network private-endpoint show -g $RESOURCE_GROUP -n MyPrivateEndpoint -o `tab
 ```
 
 ## private-dns
-
+List private-dns zone:
+```
+az network private-dns zone list -g $RESOURCE_GROUP -o table
+```
+List private-dns record-set:
+```
+az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone>
+```
 ## vnet
 
 ## subnet
