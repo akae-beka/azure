@@ -31,6 +31,10 @@ List private-dns record-set:
 ```
 az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone>
 ```
+Create private-dns zone:
+```
+az network private-dns zone create -g $RESOURCE_GROUP -n <private-zone-name>
+```
 ## vnet
 
 ## subnet
