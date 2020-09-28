@@ -8,7 +8,7 @@
     - [vnet](#vnet)
     - [subnet](#subnet)
 - [Storage](#Storage)
-    - [storage-account](#storage account)
+    - [storage-account](#storage-account)
     
     
 # Network
@@ -42,7 +42,7 @@ az network private-dns zone create -g $RESOURCE_GROUP -n <private-zone-name>
 
 # Storage
 
-## storage account
+## storage-account
 List storage account:
 ```
  az storage account list -g $RESOURCE_GROUP -o table
