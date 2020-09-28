@@ -25,6 +25,11 @@ az network private-endpoint show -g $RESOURCE_GROUP -n MyPrivateEndpoint -o `tab
 ```
 
 ## private-dns
+
+
+### private-dns zone
+Manage Private DNS zones
+
 List Private DNS zones:
 ```
 az network private-dns zone list -g $RESOURCE_GROUP -o table
@@ -37,6 +42,10 @@ Get a Private DNS zone:
 ```
 az network private-dns zone show -g $RESOURCE_GROUP -n <private-zone-name>
 ```
+
+### private-dns record
+Manage Private DNS records and record sets
+
 List all `A` record sets in a zone:
 ```
 az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone>
