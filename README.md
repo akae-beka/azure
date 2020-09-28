@@ -40,6 +40,16 @@ az network private-dns zone create -g $RESOURCE_GROUP -n <private-zone-name>
 
 ## subnet
 
+## nic
+List network interfaces:
+```
+az network nic list -g $RESOURCE_GROUP -o table
+```
+Get the details of a network interface:
+```
+az network nic show -g $RESOURCE_GROUP -n <nic-name> -o `table|yaml|json`
+```
+
 # Storage
 
 ## storage-account
