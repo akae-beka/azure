@@ -3,10 +3,10 @@
 <!-- TOC -->
 
 - [Network](#Network)
-    - [private-endpoint](##private-endpoint)
-    - [private-dns](##private-dns)
-    - [vnet](##vnet)
-    - [subnet](##subnet)
+    - [private-endpoint](#private-endpoint)
+    - [private-dns](#private-dns)
+    - [vnet](#vnet)
+    - [subnet](#subnet)
     
     
     
