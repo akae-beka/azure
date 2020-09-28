@@ -25,18 +25,31 @@ az network private-endpoint show -g $RESOURCE_GROUP -n MyPrivateEndpoint -o `tab
 ```
 
 ## private-dns
-List private-dns zone:
+List Private DNS zones:
 ```
 az network private-dns zone list -g $RESOURCE_GROUP -o table
 ```
-List private-dns record-set:
-```
-az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone>
-```
-Create private-dns zone:
+Create a Private DNS zone:
 ```
 az network private-dns zone create -g $RESOURCE_GROUP -n <private-zone-name>
 ```
+Get a Private DNS zone:
+```
+az network private-dns zone show -g $RESOURCE_GROUP -n <private-zone-name>
+```
+List all `A` record sets in a zone:
+```
+az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone>
+```
+Create an empty `A` record set:
+```
+az network private-dns record-set a create -g $RESOURCE_GROUP -z <private-dns-zone> -n <record-set-name> --ttl 300
+```
+Add an `A` record:
+```
+az network private-dns record-set a add-record -g $RESOURCE_GROUP -z <private-dns-zone> -n <record-set-name> -a <ipv4-address>
+```
+
 ## vnet
 
 ## subnet
