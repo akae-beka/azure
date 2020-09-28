@@ -7,6 +7,7 @@
     - [private-dns](#private-dns)
     - [vnet](#vnet)
     - [subnet](#subnet)
+    - [nic](#nic)
 - [Storage](#Storage)
     - [storage-account](#storage-account)
     
