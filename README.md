@@ -4,7 +4,8 @@
 
 - [Network](#Network)
     - [private-endpoint](#private-endpoint)
-    - [private-dns](#private-dns)
+    - [private-dns zone](#private-dns-zone)
+    - [private-dns record](#private-dns-record
     - [vnet](#vnet)
     - [subnet](#subnet)
     - [nic](#nic)
@@ -24,10 +25,8 @@ Show private-endpoint:
 az network private-endpoint show -g $RESOURCE_GROUP -n MyPrivateEndpoint -o `table|yaml|json`
 ```
 
-## private-dns
+## private-dns zone
 
-
-### private-dns zone
 Manage Private DNS zones
 
 List Private DNS zones:
@@ -43,7 +42,8 @@ Get a Private DNS zone:
 az network private-dns zone show -g $RESOURCE_GROUP -n <private-zone-name>
 ```
 
-### private-dns record
+## private-dns-record
+
 Manage Private DNS records and record sets
 
 List all `A` record sets in a zone:
