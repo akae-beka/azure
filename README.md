@@ -5,7 +5,7 @@
 - [Network](#Network)
     - [private-endpoint](#private-endpoint)
     - [private-dns zone](#private-dns-zone)
-    - [private-dns record](#private-dns-record
+    - [private-dns record](#private-dns-record)
     - [vnet](#vnet)
     - [subnet](#subnet)
     - [nic](#nic)
