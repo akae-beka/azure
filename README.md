@@ -9,6 +9,7 @@
     - [vnet](#vnet)
     - [subnet](#subnet)
     - [nic](#nic)
+- [VM](#VM)
 - [Storage](#Storage)
     - [storage-account](#storage-account)
     
@@ -72,6 +73,13 @@ Get the details of a network interface:
 ```
 az network nic show -g $RESOURCE_GROUP -n <nic-name> -o `table|yaml|json`
 ```
+
+# VM
+List details of Virtual Machines:
+```
+az vm list -g $RESOURCE_GROUP -o table -d
+```
+
 
 # Storage
 
