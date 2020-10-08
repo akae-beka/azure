@@ -21,3 +21,19 @@ Get storage account name on specificy region Azure:
 ```
 az storage account list -g $RESOURCE_GROUP --query "[?location == 'westeurope'].{Name:name}" -o table
 ```
+
+
+```
+az network nic show -g $OPERATOR_RESOURCE_GROUP -n opocp01.scf-ocp-p-02.scf.pro.weu2.azure.paas.cloudcenter.corp-nic01 --query ipConfigurations[0].subnet.id -o tsv
+
+
+
+
+az vm show -g $OPERATOR_RESOURCE_GROUP -n opocp01.scf-ocp-p-02.scf.pro.weu2.azure.paas.cloudcenter.corp --query networkProfiles[0].networkInterfaces.id -o tsv
+
+
+az vm show -g $OPERATOR_RESOURCE_GROUP -n opocp01.scf-ocp-p-02.scf.pro.weu2.azure.paas.cloudcenter.corp --query networkProfile
+
+
+az vm show -g $OPERATOR_RESOURCE_GROUP -n opocp01.scf-ocp-p-02.scf.pro.weu2.azure.paas.cloudcenter.corp --query networkProfile.networkInterfaces[0].id
+```
