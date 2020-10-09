@@ -2,6 +2,7 @@
 
 <!-- TOC -->
 
+- [Login](#login)
 - [Network](#Network)
     - [private-endpoint](#private-endpoint)
     - [private-dns zone](#private-dns-zone)
@@ -13,7 +14,13 @@
 - [Storage](#Storage)
     - [storage-account](#storage-account)
     
-    
+
+# Login
+Azure service principal login:
+```
+az login --service-principal -u $AZ_USER -p $AZ_PASSWORD -t $AZ_TENANT
+```
+
 # Network
 
 ## private-endpoint
