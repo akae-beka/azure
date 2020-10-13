@@ -104,6 +104,11 @@ List details of Virtual Machines:
 ```
 az vm list -g $RESOURCE_GROUP -o table -d
 ```
+List IP addresses associated with a VM:
+```
+az vm list-ip-addresses -g $RESOURCE_GROUP -o table
+```
+
 
 # Image
 List custom VM images:
