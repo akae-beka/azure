@@ -12,6 +12,7 @@
     - [subnet](#subnet)
     - [nic](#nic)
 - [VM](#VM)
+- [Image](#Image)
 - [Storage](#Storage)
     - [storage-account](#storage-account)
     
@@ -94,6 +95,11 @@ List details of Virtual Machines:
 az vm list -g $RESOURCE_GROUP -o table -d
 ```
 
+# Image
+List custom VM images:
+```
+az image list -g $RESOURCE_GROUP -o table
+```
 
 # Storage
 
