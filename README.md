@@ -23,7 +23,7 @@ az login --service-principal -u $AZ_USER -p $AZ_PASSWORD -t $AZ_TENANT
 ```
 
 # Roles
-List roles assigned:
+List role assignments:
 ```
 az role assignment list --all --assignee "$AZ_USER" --query "[*].{Name:principalName, Role:roleDefinitionName, Scope:scope}" -o json
 ```
