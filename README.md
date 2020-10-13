@@ -3,6 +3,7 @@
 <!-- TOC -->
 
 - [Login](#login)
+- [Roles](#roles)
 - [Network](#Network)
     - [private-endpoint](#private-endpoint)
     - [private-dns zone](#private-dns-zone)
@@ -19,6 +20,12 @@
 Azure service principal login:
 ```
 az login --service-principal -u $AZ_USER -p $AZ_PASSWORD -t $AZ_TENANT
+```
+
+# Roles
+List roles assigned:
+```
+az role assignment list --all --assignee "$AZ_USER" --query "[*].{Name:principalName, Role:roleDefinitionName, Scope:scope}" -o json
 ```
 
 # Network
