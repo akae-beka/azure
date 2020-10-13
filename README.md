@@ -2,6 +2,7 @@
 
 <!-- TOC -->
 
+- [Subscriptions](#Subscriptions)
 - [Login](#login)
 - [Roles](#roles)
 - [Network](#Network)
@@ -15,7 +16,16 @@
 - [Image](#Image)
 - [Storage](#Storage)
     - [storage-account](#storage-account)
-    
+
+# Subscriptions
+Get the details of a subscription:
+```
+az account show
+```
+Get a list of subscriptions for the logged in account:
+```
+az account list -o table
+```
 
 # Login
 Azure service principal login:
