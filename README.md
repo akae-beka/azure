@@ -34,10 +34,16 @@ az login --service-principal -u $AZ_USER -p $AZ_PASSWORD -t $AZ_TENANT
 ```
 
 # Roles
-List role assignments:
+List role assignments with query:
 ```
 az role assignment list --all --assignee "$AZ_USER" --query "[*].{Name:principalName, Role:roleDefinitionName, Scope:scope}" -o json
 ```
+
+List role assignments:
+```
+az role assignment list --all --assignee "$(az account list --query "[].user.name" -o tsv)" -o table
+```
+
 
 # Network
 
