@@ -8,7 +8,10 @@ List all A record sets in a zone with query:
 ```
 az network private-dns record-set a list -g $RESOURCE_GROUP -z <private-dns-zone> --query "[*].{Name:name,ResourceGroup:resourceGroup,Records:aRecords[0].ipv4Address}" -o table
 ```
-
+List network interfaces with query:
+```
+az network nic list -g $RESOURCE_GROUP --query "[].{Name:name, IP:ipConfigurations[0].privateIpAddress}" -o table
+```
 
 ### Storage Account query
 
