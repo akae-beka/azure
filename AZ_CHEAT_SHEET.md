@@ -1,5 +1,7 @@
 # az cli
 
+
+#### Azure VM
 Deallocate a VM:
 ```
 az vm list -g $RG -d --query "[?contains(name, 'vmname') && powerState == 'VM running'].name" -o tsv | xargs -L1 bash -c 'az vm deallocate -g $RG -n $0'
@@ -11,6 +13,11 @@ az vm list -g $RG --query "[?contains(name, 'vmname')].name" -o tsv | xargs -L1 
 Delete a VM:
 ```
 az vm list -g $RG --query "[?contains(name, 'vmname')].name" -o tsv | xargs -L1 bash -c 'az vm delete -g $RG -n $0 -y --debug'
+```
+#### Azure Disk
+Delete a disk:
+```
+az disk list -g $RG --query "[?contains(name, 'diskname')].name" -o tsv | xargs -L1 bash -c 'az disk delete -g $RG -n $0 -y --debug'
 ```
 
 
