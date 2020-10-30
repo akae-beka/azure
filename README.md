@@ -4,6 +4,7 @@
 
 - [Subscriptions](#Subscriptions)
 - [Login](#login)
+- [Resource](#Resource)
 - [Roles](#roles)
 - [Network](#Network)
     - [private-endpoint](#private-endpoint)
@@ -31,6 +32,12 @@ az account list -o table
 Azure service principal login:
 ```
 az login --service-principal -u $AZ_USER -p $AZ_PASSWORD -t $AZ_TENANT
+```
+
+# Resource
+List resources:
+```
+az resource list -g $RESOURCE_GROUP -o table
 ```
 
 # Roles
