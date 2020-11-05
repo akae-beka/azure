@@ -13,6 +13,7 @@
     - [vnet](#vnet)
     - [subnet](#subnet)
     - [nic](#nic)
+    - [load-balancer](#lb)
 - [VM](#VM)
 - [Image](#Image)
 - [Storage](#Storage)
@@ -110,6 +111,20 @@ az network nic list -g $RESOURCE_GROUP -o table
 Get the details of a network interface:
 ```
 az network nic show -g $RESOURCE_GROUP -n <nic-name> -o `table|yaml|json`
+```
+
+## lb
+List load balancers:
+```
+az network lb list -g $RESOURCE_GROUP -o table
+```
+Get the details of a load balancer:
+```
+az network lb show -g $RESOURCE_GROUP -n <lb-name> -o `table|yaml|json`
+```
+List load balancers with query get name and private ip address:
+```
+az network lb list -g $RESOURCE_GROUP --query "[].{Name:name, IP:frontendIpConfigurations[0].privateIpAddress}" -o table
 ```
 
 # VM
