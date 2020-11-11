@@ -28,6 +28,19 @@ Get a list of subscriptions for the logged in account:
 ```
 az account list -o table
 ```
+List all subscriptions, rather than just 'Enabled' ones:
+```
+az account list --all -o table
+```
+Set a subscription to be the current active subscription:
+```
+az account set -s <name_or_id_subscription>
+```
+Retrieve up-to-date subscriptions from server:
+```
+az account list --refresh
+```
+
 
 # Login
 Azure service principal login:
