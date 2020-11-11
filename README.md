@@ -34,7 +34,7 @@ az account list --all -o table
 ```
 Set a subscription to be the current active subscription:
 ```
-az account set -s <name_or_id_subscription>
+az account set -s <subscription>
 ```
 Retrieve up-to-date subscriptions from server:
 ```
